@@ -42,6 +42,7 @@ section {
     width: 80%;
     background-color: white;
     padding: 20px;
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -91,4 +92,53 @@ form button:hover {
     border: 4px solid #ab47bc; /* Adiciona uma borda rosa pink */
     width: fit-content; /* Garante que o tamanho do retângulo se ajuste ao conteúdo */
     text-align: center;
+}
+.map-section {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+}
+.gift-list img {
+    width: 30%; /* Ajusta para 80% da largura da section */
+    max-width: 600px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Opcional: bordas arredondadas */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift-list a:hover img {
+    transform: scale(1.05); /* Faz a imagem aumentar um pouco ao passar o mouse */
+}
+.gift-list img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift-list a:hover img {
+    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+.confirm-image {
+    width: 10%; /* Define a largura para 80% da div */
+    max-width: 600px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém a proporção original */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+}
+.cerimonia-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
