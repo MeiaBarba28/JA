@@ -4,148 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica & Arthur</title>
-    <!-- Adiciona a URL para carregar uma fonte do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
-    <style>
-    /* Estilo geral */
-    body {
-        font-family: Georgia, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #faf3ff; /* Lilás bem suave */
-    }
-    /* Define a nova fonte para o site */
-        body {
-            font-family: 'Imperial Script', cursive;
-        }
-        h1 {
-            font-size: 2em;
-            font-weight: bold;
-        }
-        p {
-            font-family: 'Open Sans', sans-serif, font-size: 1em;
-        }
-
-    /* Cabeçalho com foto de fundo */
-    header {
-        background-image: url('https://via.placeholder.com/1920x600'); /* Substitua pela imagem real */
-        background-size: cover;
-        background-position: center;
-        color: #ffeb3b; /* Amarelo brilhante */
-        text-align: center;
-        padding: 100px 0;
-        position: relative;
-    }
-
-    header h1 {
-        font-size: 50px;
-        margin: 0;
-        text-shadow: 2px 2px 5px #6a1b9a; /* Roxo escuro suave */
-    }
-
-    header p {
-        font-size: 20px;
-        text-shadow: 1px 1px 3px #6a1b9a;
-    }
-
-    /* Contador regressivo */
-    #countdown {
-        font-size: 24px;
-        color: #fafafa;
-        background-color: rgba(218, 112, 214, 0.7); /* Lilás translúcido */
-        padding: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        margin-top: 20px;
-    }
-
-    /* Seções */
-    section {
-        margin: 20px auto;
-        width: 80%;
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    section h2 {
-        text-align: center;
-        color: #d81b60; /* Rosa escuro */
-    }
-
-    section img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .google-map {
-        height: 300px;
-        border-radius: 10px;
-    }
-     /* Centralização da imagem e botão */
-    .gift-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .gift-list img {
-        width: 80%; /* Ajuste a largura conforme necessário */
-        margin-bottom: 20px; /* Espaço entre a imagem e o botão */
-        border-radius: 10px;
-    }
-
-    /* Botão na lista de presentes */
-    .gift-list button {
-        background-color: #d81b60; /* Rosa escuro */
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        font-size: 18px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .gift-list button:hover {
-        background-color: #880e4f; /* Um tom ainda mais escuro de rosa */
-    }
-
-    /* Formulário RSVP */
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    form input, form textarea, form button {
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-    }
-
-    form input, form textarea {
-        background-color: #fff0f6; /* Rosa suave */
-    }
-
-    form button {
-        background-color: #ab47bc; /* Roxo suave */
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    form button:hover {
-        background-color: #6a1b9a; /* Roxo escuro */
-    }
-    
-</style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Importando o CSS -->
 </head>
 <body>
+
     <!-- Cabeçalho -->
     <header>
         <h1>Jessica & Arthur</h1>
@@ -169,7 +32,7 @@
     <!-- Mapa -->
     <section>
         <h2>Localização</h2>
-        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4908100129223!2d-46.65657358444584!3d-23.590246684667503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cccd6dc5f7%3A0xb3a0431cda13f880!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1616236616481!5m2!1sen!2sbr" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="google-map" src="https://www.google.com/maps/embed?..."></iframe>
     </section>
 
     <!-- Lista de presentes -->
@@ -182,68 +45,30 @@
     </section>
 
     <!-- Formulário RSVP -->
-<section>
-    <h2>RSVP</h2>
-    <form action="#">
-        <div class="form-row">
+    <section>
+        <h2>RSVP</h2>
+        <form action="#">
             <label for="nome">Nome:</label>
-            <input class="medium-input" type="text" id="nome" name="nome" placeholder="Nome Completo" required>
-        </div>
-        
-        <div class="form-row">
+            <input type="text" id="nome" name="nome" required>
+
             <label for="adultos">Adultos:</label>
-            <input class="small-input" type="number" id="adultos" name="adultos" placeholder="Quantidade de Adultos" required>
-        </div>
-        
-        <div class="form-row">
+            <input type="number" id="adultos" name="adultos" required>
+
             <label for="criancas">Crianças:</label>
-            <input class="small-input" type="number" id="criancas" name="criancas" placeholder="Quantidade de Crianças" required>
-        </div>
-        
-        <div class="form-row">
+            <input type="number" id="criancas" name="criancas" required>
+
             <label for="email">E-mail:</label>
-            <input class="medium-input" type="email" id="email" name="email" placeholder="E-mail" required>
-        </div>
-        
-        <div class="form-row">
+            <input type="email" id="email" name="email" required>
+
             <label for="telefone">Telefone:</label>
-            <input class="medium-input" type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
-        </div>
-        
-        <div class="form-row">
+            <input type="tel" id="telefone" name="telefone" required>
+
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Mensagem para o casal" rows="5"></textarea>
-        </div>
-        
-        <button type="submit">Confirmar Presença</button>
-    </form>
-</section>
+            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
 
-<style>
-    /* Estilo para alinhar texto ao lado dos campos */
-    .form-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .form-row label {
-        margin-right: 10px; /* Espaçamento entre o texto e o campo */
-        width: 100px; /* Define um tamanho fixo para os textos */
-    }
-
-    .small-input {
-        width: 100px; /* Define um tamanho menor */
-    }
-
-    .medium-input {
-        width: 200px; /* Define um tamanho menor para os campos maiores */
-    }
-
-    textarea {
-        width: 200px; /* Ajuste para o textarea */
-    }
-</style>
+            <button type="submit">Confirmar Presença</button>
+        </form>
+    </section>
 
     <script>
         // Contador regressivo
@@ -266,5 +91,6 @@
             }
         }, 1000);
     </script>
+
 </body>
 </html>
