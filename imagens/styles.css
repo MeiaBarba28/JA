@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ff66b2;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #ff99cc;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.item img {
+    width: 210px; /* Define a largura fixa */
+    height: 250px; /* Define a altura fixa */
+    object-fit: cover; /* Garante que a imagem se ajuste ao espaço sem distorção */
+    border-radius: 10px;
+}
