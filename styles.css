@@ -18,7 +18,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-image: url('imagens/imagem2.jpeg');
+    background-image: url('imagens/imagem1.jpeg');
     background-size: cover;
     background-position: center;
     color: var(--rosa-pastel);
