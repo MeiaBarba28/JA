@@ -53,6 +53,7 @@ section {
 section h2 {
     text-align: center;
     color: var(--rosa-escuro);
+    font-size: 30px;
     font-family: 'Imperial Script', cursive;
 }
 
