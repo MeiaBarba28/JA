@@ -85,7 +85,7 @@ form button:hover {
     background-color: var(--rosa-pastel);
 }
 #countdown {
-    font-size: 24px;
+    font-size: 30px;
     color: #ef51f0;
     background-color: rgba(0, 0, 0, 0); /* Lilás translúcido */
     padding: 10px;
