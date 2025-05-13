@@ -86,13 +86,11 @@ form button:hover {
 }
 #countdown {
     font-size: 30px;
-    color: #ef51f0;
-    background-color: rgba(0, 0, 0, 0); /* Lilás translúcido */
+    color: #D70080;
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
     margin-top: 20px;
-    border: 0px solid #ab47bc; /* Adiciona uma borda rosa pink */
     width: fit-content; /* Garante que o tamanho do retângulo se ajuste ao conteúdo */
     text-align: center;
 }
@@ -114,7 +112,7 @@ form button:hover {
 }
 .gift-list img {
     width: 30%; /* Ajusta para 80% da largura da section */
-    max-width: 600px; /* Define um tamanho máximo */
+    max-width: 400px; /* Define um tamanho máximo */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 10px; /* Opcional: bordas arredondadas */
     display: block;
@@ -133,6 +131,14 @@ form button:hover {
     transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
 }
 .confirm-image {
+    width: 10%; /* Define a largura para 80% da div */
+    max-width: 600px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém a proporção original */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+}
+.gift-image {
     width: 10%; /* Define a largura para 80% da div */
     max-width: 600px; /* Limita o tamanho máximo */
     height: auto; /* Mantém a proporção original */
