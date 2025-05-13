@@ -10,6 +10,13 @@
     --branco: #ffffff;
     --rosa-estranho: #d70080;
 }
+/* Ajustes para telas menores (como celulares) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
 
 /* Estilos gerais */
 body {
