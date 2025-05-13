@@ -1,4 +1,3 @@
-
 /* Definição das cores */
 :root {
     --rosa-magenta: #D70080;
@@ -8,15 +7,7 @@
     --roxo-escuro: #6a1b9a;
     --preto: #000000;
     --branco: #ffffff;
-    --rosa-estranho: #d70080;
 }
-/* Ajustes para telas menores (como celulares) */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
 
 /* Estilos gerais */
 body {
@@ -24,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--rosa-pastel);
+    text-align: center;
 }
 
 /* Cabeçalho */
@@ -49,135 +41,71 @@ header p {
 
 /* Seções */
 section {
-    margin: 20px auto;
     width: 80%;
     background-color: white;
     padding: 20px;
-    text-align: center;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    text-align: center;
     color: var(--rosa-escuro);
     font-size: 30px;
     font-family: 'Imperial Script', cursive;
 }
 
-/* Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-form input, form textarea, form button {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-form input, form textarea {
-    background-color: #FFD1DC;
-}
-
-form button {
-    background-color: var(--roxo-suave);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: var(--rosa-pastel);
-}
-#countdown {
-    font-size: 22px;
-    color: #d81b60;
-    padding: 10px;
-    border-radius: 1px;
-    display: inline-block;
-    margin-top: 2px;
-    width: fit-content; /* Garante que o tamanho do retângulo se ajuste ao conteúdo */
-    text-align: center;
-    text-shadow: 1px 1px 2px var(--rosa-escuro);
-}
-.map-section {
-    text-align: center;
-    margin: 20px auto;
-    width: 80%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.google-map {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    border: none;
-}
-.gift-list img {
-    width: 30%; /* Ajusta para 80% da largura da section */
-    max-width: 400px; /* Define um tamanho máximo */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Opcional: bordas arredondadas */
-    display: block;
-    margin: 0 auto; /* Centraliza a imagem */
-    transition: transform 0.3s ease-in-out;
-}
-
-.gift-list a:hover img {
-    transform: scale(1.05); /* Faz a imagem aumentar um pouco ao passar o mouse */
-}
-.gift-list img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.gift-list a:hover img {
-    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
-}
-.confirm-image {
-    width: 10%; /* Define a largura para 80% da div */
-    max-width: 600px; /* Limita o tamanho máximo */
-    height: auto; /* Mantém a proporção original */
-    display: block;
-    margin: 0 auto; /* Centraliza a imagem */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-}
-.gift-image {
-    width: 10%; /* Define a largura para 80% da div */
-    max-width: 600px; /* Limita o tamanho máximo */
-    height: auto; /* Mantém a proporção original */
-    display: block;
-    margin: 0 auto; /* Centraliza a imagem */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-}
-.cerimonia-img {
-    display: block;
-    margin: 0 auto;
+/* Imagens responsivas */
+img {
     max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
+
+/* Container de imagens */
 .imagens-container {
     display: flex;
-    gap: 1px; /* Espaçamento entre as imagens */
-    justify-content: center; /* Centraliza as imagens na tela */
-    align-items: center; /* Alinha verticalmente ao centro */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .imagem-grande {
-    width: 400px; /* Define a imagem maior */
+    width: 48%;
 }
 
-.coluna-pequena {
+/* Mapa */
+.map-section iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Lista de presentes */
+.gift-list {
     display: flex;
-    flex-direction: column; /* Organiza as imagens pequenas em coluna */
-    gap: 1px; /* Espaçamento entre as imagens pequenas */
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.imagem-pequena {
-    width: 200px; /* Define o tamanho das imagens menores */
+.gift-image, .confirm-image {
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 100px 50px;
+    }
+
+    .imagem-grande {
+        width: 100%;
+    }
+
+    .gift-image, .confirm-image {
+        width: 80%;
+    }
 }
