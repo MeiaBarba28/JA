@@ -6,6 +6,7 @@
     --rosa-escuro: #d81b60;
     --roxo-suave: #ab47bc;
     --roxo-escuro: #6a1b9a;
+    --preto: #000000;
 }
 
 /* Estilos gerais */
@@ -21,7 +22,7 @@ header {
     background-image: url('imagens/imagem1.jpeg');
     background-size: cover;
     background-position: center;
-    color: var(--rosa-pastel);
+    color: var(--preto);
     text-align: right;
     padding: 200px 150px;
 }
