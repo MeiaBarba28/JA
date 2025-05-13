@@ -18,7 +18,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-image: url('https://i.imgur.com/7gvvVIm.jpeg');
+    background-image: url('imagens/imagem2.jpeg');
     background-size: cover;
     background-position: center;
     color: var(--rosa-pastel);
@@ -84,13 +84,13 @@ form button:hover {
 }
 #countdown {
     font-size: 24px;
-    color: #fafafa;
-    background-color: rgba(218, 112, 214, 0.7); /* Lilás translúcido */
+    color: #f6c4f7;
+    background-color: rgba(0, 0, 0, 0); /* Lilás translúcido */
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
     margin-top: 20px;
-    border: 4px solid #ab47bc; /* Adiciona uma borda rosa pink */
+    border: 0px solid #ab47bc; /* Adiciona uma borda rosa pink */
     width: fit-content; /* Garante que o tamanho do retângulo se ajuste ao conteúdo */
     text-align: center;
 }
@@ -142,4 +142,24 @@ form button:hover {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+.imagens-container {
+    display: flex;
+    gap: 1px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza as imagens na tela */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.imagem-grande {
+    width: 400px; /* Define a imagem maior */
+}
+
+.coluna-pequena {
+    display: flex;
+    flex-direction: column; /* Organiza as imagens pequenas em coluna */
+    gap: 1px; /* Espaçamento entre as imagens pequenas */
+}
+
+.imagem-pequena {
+    width: 200px; /* Define o tamanho das imagens menores */
 }
