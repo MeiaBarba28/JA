@@ -94,6 +94,14 @@ img {
     max-width: 400px;
 }
 
+.google-map {
+    width: 100%;
+    max-width: 800px; /* Define um tamanho máximo para computadores */
+    height: 400px; /* Altura padrão para telas maiores */
+    border-radius: 10px;
+    border: none;
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
     header {
@@ -108,4 +116,9 @@ img {
     .gift-image, .confirm-image {
         width: 80%;
     }
+    .google-map {
+        max-width: 100%; /* Faz o mapa ocupar toda a largura da tela do celular */
+        height: 250px; /* Reduz a altura para celular */
+    }
+
 }
