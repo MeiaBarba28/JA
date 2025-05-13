@@ -3,6 +3,10 @@ body {
     text-align: center;
     background-color: #ffe6f2;
 }
+.texto-esquerda {
+    text-align: center; /* Isso alinha o texto à esquerda */
+    margin: 1px;
+}
 
 .lista {
     list-style: none;
@@ -10,8 +14,9 @@ body {
 }
 
 .lista li {
-    margin: 10px;
+    margin: 1px;
 }
+
 
 .lista a {
     text-decoration: none;
@@ -26,4 +31,12 @@ body {
 
 .lista a:hover {
     background-color: #ff3385;
+}
+.container {
+    width: 300px; /* Define um tamanho para o quadrado */
+    margin: 2px auto;
+    padding: 2px;
+    background-color: white;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Suave sombra para destacar */
 }
