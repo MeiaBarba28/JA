@@ -38,3 +38,12 @@ header {
         grid-template-columns: repeat(2, 1fr); /* Reduz o número de colunas */
     }
 }
+.icone {
+    width: 50px; /* Define o tamanho do ícone */
+    height: 50px;
+    transition: transform 0.3s ease-in-out; /* Suaviza o efeito */
+}
+
+.icone:hover {
+    transform: translateY(-10px); /* Faz o ícone "subir" */
+}
