@@ -51,10 +51,14 @@ section {
 
 section h2 {
     color: var(--rosa-escuro);
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Imperial Script', cursive;
 }
-
+section h3 {
+    color: var(--rosa-escuro);
+    font-size: 55px;
+    font-family: 'Imperial Script', cursive;
+}
 /* Imagens responsivas */
 img {
     max-width: 100%;
@@ -89,11 +93,15 @@ img {
     margin-top: 20px;
 }
 
-.gift-image, .confirm-image {
-    width: 50%;
+.gift-image {
+    width: 150%;
     max-width: 400px;
 }
 
+.confirm-image {
+    width: 150%;
+    max-width: 400px;
+}
 .google-map {
     width: 100%;
     max-width: 800px; /* Define um tamanho máximo para computadores */
