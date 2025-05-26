@@ -16,6 +16,24 @@ body {
 .lista li {
     margin: 1px;
 }
+.lista-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .coluna {
+            width: 23%; /* Define largura para quatro colunas */
+        }
+        @media (max-width: 768px) {
+            .coluna {
+                width: 48%; /* Ajusta para duas colunas em telas menores */
+            }
+        }
+        @media (max-width: 480px) {
+            .coluna {
+                width: 100%; /* Ajusta para uma coluna em telas muito pequenas */
+            }
+        }
 
 
 .lista a {
@@ -33,7 +51,7 @@ body {
     background-color: #ff3385;
 }
 .container {
-    width: 300px; /* Define um tamanho para o quadrado */
+    width: 1000px; /* Define um tamanho para o quadrado */
     margin: 2px auto;
     padding: 2px;
     background-color: white;
