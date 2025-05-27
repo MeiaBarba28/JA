@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento via PIX e Mercado Pago</title>
+    <link rel="stylesheet" href="static/styles-pix.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Pague com PIX ou Mercado Pago</h2>
+
+        <p>Escaneie o QR Code abaixo para realizar o pagamento via PIX:</p>
+        <img src="static/imagens/750.jpg" alt="QR Code PIX">
+
+        <p><strong>Ou copie e cole o código PIX:</strong></p>
+        <input type="text" value="00020101021126960014br.gov.bcb.pix..." readonly>
+        <br><br>
+        <button onclick="copiarCodigo()">Copiar Código PIX</button>
+
+        <hr>
+
+        <h3>Ou pague via Mercado Pago:</h3>
+<a href="{{ link_pagamento }}" target="_blank">
+    <button>Pagar com Mercado Pago</button>
+</a>
+
+    </div>
+
+    <script>
+        function copiarCodigo() {
+            const codigoPix = document.querySelector("input");
+            codigoPix.select();
+            document.execCommand("copy");
+            alert("Código copiado! Agora cole no seu app de banco.");
+        }
+    </script>
+</body>
+</html>
