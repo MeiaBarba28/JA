@@ -37,14 +37,46 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .lista-container {
+        display: flex;
+        flex-direction: column; /* Empilha as colunas */
+        align-items: center; /* Centraliza as colunas */
+    }
+
     .coluna {
-        flex-basis: 48%;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centraliza os itens */
+        text-align: center;
+    }
+
+    .lista {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os nomes */
     }
 }
 
 @media (max-width: 480px) {
+    .lista-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .coluna {
-        flex-basis: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .lista {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
