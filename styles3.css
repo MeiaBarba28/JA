@@ -22,11 +22,11 @@ body {
             justify-content: space-between;
         }
         .coluna {
-            width: 23%; /* Define largura para quatro colunas */
+            width: 25%; /* Define largura para quatro colunas */
         }
         @media (max-width: 768px) {
             .coluna {
-                width: 48%; /* Ajusta para duas colunas em telas menores */
+                width: 58%; /* Ajusta para duas colunas em telas menores */
             }
         }
         @media (max-width: 480px) {
@@ -35,6 +35,12 @@ body {
             }
         }
 
+button {
+    display: block; /* Faz o botão ocupar uma linha inteira */
+    margin: 20px auto; /* Margem automática nas laterais para centralizar */
+    width: 200px; /* Ajuste de largura, se necessário */
+    text-align: center; /* Centraliza o texto */
+}
 
 .lista a {
     text-decoration: none;
@@ -51,8 +57,8 @@ body {
     background-color: #ff3385;
 }
 .container {
-    width: 1000px; /* Define um tamanho para o quadrado */
-    margin: 2px auto;
+    width: 1200px; /* Define um tamanho para o quadrado */
+    margin: 5px auto;
     padding: 2px;
     background-color: white;
     border-radius: 10px; /* Bordas arredondadas */
