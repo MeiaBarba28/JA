@@ -4,13 +4,17 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
 }
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta dinamicamente */
     gap: 20px;
-    max-width: 900px;
+    max-width: 1000px;
+    width: 90%; /* Usa porcentagem para melhor adaptação */
 }
 
 .product {
@@ -27,15 +31,16 @@ body {
 }
 
 .product h2 {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin: 10px 0;
 }
 
 .product p {
-    font-size: 18px;
+    font-size: 1rem;
     color: #333;
 }
 
+/* Botão responsivo */
 .product button {
     background-color: #555;
     color: white;
@@ -43,8 +48,30 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 .product button:hover {
     background-color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para duas colunas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr; /* Ajusta para uma única coluna */
+    }
+
+    .product h2 {
+        font-size: 1rem; /* Reduz tamanho do título */
+    }
+
+    .product p {
+        font-size: 0.9rem; /* Ajusta tamanho do texto */
+    }
 }

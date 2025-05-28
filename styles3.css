@@ -3,9 +3,27 @@ body {
     text-align: center;
     background-color: #ffe6f2;
 }
-.texto-esquerda {
-    text-align: center; /* Isso alinha o texto à esquerda */
-    margin: 1px;
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 200px;
+    max-width: 23%;
 }
 
 .lista {
@@ -14,53 +32,36 @@ body {
 }
 
 .lista li {
-    margin: 1px;
+    margin: 5px;
 }
-.lista-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .coluna {
-            width: 25%; /* Define largura para quatro colunas */
-        }
-        @media (max-width: 768px) {
-            .coluna {
-                width: 58%; /* Ajusta para duas colunas em telas menores */
-            }
-        }
-        @media (max-width: 480px) {
-            .coluna {
-                width: 100%; /* Ajusta para uma coluna em telas muito pequenas */
-            }
-        }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .coluna {
+        flex-basis: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .coluna {
+        flex-basis: 100%;
+    }
+}
 
 button {
-    display: block; /* Faz o botão ocupar uma linha inteira */
-    margin: 20px auto; /* Margem automática nas laterais para centralizar */
-    width: 200px; /* Ajuste de largura, se necessário */
-    text-align: center; /* Centraliza o texto */
-}
-
-.lista a {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
     background-color: #ff66b2;
     color: white;
+    padding: 10px;
     border-radius: 5px;
-    display: inline-block;
+    border: none;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.lista a:hover {
+button:hover {
     background-color: #ff3385;
-}
-.container {
-    width: 1200px; /* Define um tamanho para o quadrado */
-    margin: 5px auto;
-    padding: 2px;
-    background-color: white;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Suave sombra para destacar */
 }
