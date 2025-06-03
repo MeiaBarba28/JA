@@ -27,6 +27,9 @@ header {
     padding: 250px 150px;
     
 }
+
+
+
 .text {
     text-align: center; /* Mantém a formatação alinhada à direita */
     max-width: 500px; /* Ajuste conforme necessário */
@@ -35,6 +38,17 @@ header {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     justify-content: flex-end; /* Mantém o texto à direita */
+}
+.texto {
+    position: absolute;
+    top: 14%;
+    left: 91%;
+    transform: translateX(-100%);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    z-index: 100;
+    white-space: nowrap;
 }
 
 header h1 {
@@ -124,6 +138,15 @@ img {
     header {
         text-align: center;
         padding: 100px 50px;
+        
+    }
+
+    .texto {
+        top: -3%;
+        left: 86%;
+        font-size: 50px;
+        white-space: nowrap
+        
     }
 
     .imagem-grande {
